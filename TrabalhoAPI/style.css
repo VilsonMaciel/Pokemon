@@ -49,9 +49,24 @@ body {
         margin-top: 50px;
         gap: 50px;
         
-            .foto {
-                width: 250px;
-                height: 250px;
+        .foto {
+            width: 50%;
+            height: 250px;
+        }
+        
+        .description {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: bisque;
+            border-radius: 12px;
+            width: 50%;
+            height: 250px;
+            padding: 10px;
+            gap: 15px;
+            }
+
+            #habilidades {
+                list-style-type: none;
             }
     }
 
