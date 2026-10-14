@@ -1,9 +1,8 @@
 
 // import MeuComponente from "./Componentes/MeuComponente"
 
-import { useState } from "react";
-import type { pokemon } from "./types";
-import { ListaPokemons } from "./Componentes/listapokemons";
+import { ListaPokemons } from "./Componentes/ListaPokemons";
+import { Navbar } from "./Componentes/Navbar";
 
 export default function App() {
 
@@ -11,20 +10,14 @@ export default function App() {
    // const [pokemon, setPokemon] = useState<pokemon | null>(null);
    // const [carregando, setCarregando] = useState(false);
 
-   // async function pesquisarPokemon() {
-   //    // setCarregando(true)
-   //    // setCarregando(false)
-   //    // setPokemon(dados);
-   //    // console.log(dados)
-   // }
-
-   // async function teste() {
-
-   // }
    return (
       <>
-         <h1>teste</h1>
-         <h1>teste</h1>
+         <Navbar/>
+         <main className="flex flex-col items-center w-full bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0wuKyYIE3TNWI5x6pdp9naZitPLcfOmzFhvzGvGllcNWwptIC')]">
+            <section className="flex bg-gray-50 flex-col max-w-6xl p-6 h-screens">
+               <ListaPokemons />
+            </section>
+         </main>
       </>
    )
 }

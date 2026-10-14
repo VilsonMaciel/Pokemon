@@ -59,7 +59,7 @@ const api_url = "https://pokeapi.co/api/v2/pokemon";
 //     return urls
 // }
 
-export async function testepokemons() {
+export async function buscarPokemons() {
     const consulta = await fetch(`${api_url}`)
 
     var lista = [];

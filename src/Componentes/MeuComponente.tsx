@@ -1,5 +1,5 @@
 export default function MeuComponente() {
-    var users = [
+    const users = [
         {
             "user": "nome",
             "senha": 123

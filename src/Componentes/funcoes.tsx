@@ -2,7 +2,6 @@ import { useState } from "react";
 
 // export function Funcao() {
 
-
 //     return (
 //         <>
 //             <h1>teste</h1>
@@ -66,7 +65,7 @@ export function Cumprimento() {
 
     const [texto, setTexto] = useState("Digite seu nome")
 
-    function mensagem(nome) {
+    function mensagem(nome: string) {
         if (nome != "") {
             setTexto("Olá " + nome)
         } else {

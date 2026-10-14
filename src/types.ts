@@ -4,9 +4,22 @@ export type props = {
 }
 
 export type pokemon = {
-    name: string,
-    url: string,
+    name: string;
+    url: string;
     sprites: {
-        front_default: string
+        front_default: string;
+        dream_world: {
+            front_default: string;
+        },
+        versions: {
+            "generation-viii": {
+                "brilliant-diamond-shining-pearl": {
+                    icons: {
+                        front_default: string
+                    }
+                    front_default: string
+                }
+            }
+        }
     }
 }
